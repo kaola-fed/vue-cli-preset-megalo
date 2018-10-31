@@ -20,10 +20,13 @@ module.exports = (api, options, rootOptions) => {
     }
   })
 
-  const { platform } = options
-  console.log(options)
+  const {
+    platform = 'wechat',
+    useVhtml = true,
+  } = options
 
   api.render('./template', {
-    platform
+    platform,
+    useVhtml
   })
 }

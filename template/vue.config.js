@@ -15,7 +15,7 @@ module.exports = {
   pluginOptions: {
     megalo: {
       platform: '<%= platform %>',
-      useVhtml: true
+      useVhtml: <%= useVhtml %>,
     }
   }
 }
